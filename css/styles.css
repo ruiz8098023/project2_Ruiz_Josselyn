@@ -1,0 +1,320 @@
+/* RESOURCES */
+/*CSS HOVER:  https://thebrandsmen.com/css-image-hover-effects/#:~:text=10%20Simple%20CSS%20Hover%20Effects%201%20Grayscale%20To,effects%20by%20adjusting%20the%20variables%20within%20the%20CSS. */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+
+/*****************************************GENERAL/DEFAULT STYLINGS START*****************************************/
+body {
+    background-color:#F4F2F3;
+    margin: 3%;
+}
+
+
+h1, h2, h3 {
+    font-family: p22-mackinac-pro, serif;
+    font-style: italic;
+    color: #231F20;
+    margin: 0 0 5px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #231F20;
+}
+
+ul {
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #231F20;
+    margin: 0 0 5% 5%;
+}
+
+
+/***Section/article Stylings***/
+article {
+    padding-top: 3%;
+}
+
+/* **IMAGE STYLINGS** */
+img {
+    width: 100%;
+    margin: 3% 0 0 0;
+}
+
+
+/*****************************************GENERAL/DEFAULT STYLINGS END*****************************************/
+
+
+.header_image {
+    text-align: center;
+    max-width: 3739px;
+}
+
+.process_image {
+    max-width: 800px;
+    text-align: center;
+}
+
+.profile_image {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+
+/*****************************************BUTTON STYLING*****************************************/
+button {
+    background-color: white;
+    color: #231F20;
+    border: 2px solid #231F20;
+    width: 45%;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3%;
+    padding: 1%;
+    text-align: left;
+}
+
+button:hover{
+    background-color: #231F20;
+    color: #F4F2F3;
+}
+
+
+/*****************************************Work Case Image Styles Start*****************************************/
+
+figure img:hover, figure div img:hover {
+    transition: 1s ease;
+}
+
+figure img:hover, figure div img:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
+}
+
+/* .worktwo img:nth-child(1), .workthree img:nth-child(1){
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.worktwo img:nth-child(2), .workthree img:nth-child(2) {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+} */
+
+/*****************************************Work Case Image Styles End*****************************************/
+
+
+
+
+
+/*****************************************Navigation Styles Start*****************************************/
+
+
+/**** DESKTOP MENU STYLE START ****/
+.full-menu {
+	display: none;
+}
+
+
+/**** HAMBURGER MENU STYLE START ****/
+.hamburger{
+	background:none;
+	position:absolute;
+    width: 9%;
+	top:0;
+	right:0;
+	line-height:45px;
+	padding:5px 15px 0px 15px;
+	color:#999;
+	border:0;
+	font-size:1.4em;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:10000000000000;
+  }
+
+  .cross {
+	background:none;
+	position:absolute;
+    width: 9%;
+	top:0px;
+	right:0;
+	padding:7px 15px 0px 15px;
+	color:#999;
+	border:0;
+	font-size:3em;
+	line-height:65px;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:10000000000000;
+  }
+
+  .short-menu {
+      z-index:1000000; 
+      font-weight:bold; 
+      font-size:0.8em; 
+      width:80%; 
+      background: #F4F2F3;  
+      position: absolute; 
+      text-align: center; 
+      font-size: 12px;
+      margin: 0 5%;
+    }
+
+  .short-menu ul {
+      margin: 0; 
+      padding: 0; 
+      list-style-type: none; 
+      list-style-image: none;
+    }
+
+  .short-menu li {
+      display: block;   
+      padding: 15px 0 15px 0; 
+      border-bottom: #231F20 1px solid;
+    }
+  .short-menu li:hover{ display: block; color: #F4F2F3; background:#EE2632; padding: 15px 0 15px 0; border-bottom:#F4F2F3 2px solid;
+    }
+
+  /* .short-menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+  .short-menu ul li a:hover {
+      color: #F4F2F3; 
+      text-decoration:none;
+    } */
+  .short-menu a {text-decoration:none; color:#231F20;}
+  .short-menu a:hover{text-decoration:none; color:#F4F2F3;}
+  /**** HAMBURGER MENU STYLE END ****/
+
+
+/*****************************************Navigation Styles End*****************************************/
+
+
+
+footer {
+    margin: 10% 0 10% 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*********************** MEDIA QUERIES START ***********************/
+@media (min-width: 870px) {
+
+    /* Navigation Styles */
+    .short-menu, .hamburger, .cross {
+        display: none;
+    }
+
+    .full-menu {
+        display: block;
+        font-family: lato, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: right;
+    }
+    
+    .full-menu ul li {
+        list-style-type: none;
+        display: inline;
+    }
+    
+    .full-menu ul li a {
+        color: #231F20;
+        padding: 5px 50px 5px 0;
+        text-align: left;
+    }
+    
+    .full-menu ul li a:hover{
+        background-color: #EE2632;
+        color: #F4F2F3;
+        text-decoration: none;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_article {
+        display: flex;
+    }
+
+    .process_article div {
+        width: 50%;
+    }
+
+    .process_image {
+        width: 50%;
+        padding-left: 5%;
+    }
+
+    /* Work Case images */
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    figure div img {
+        max-width: 48%;
+    }
+
+
+    /* Footer styling */
+    footer {
+        margin: 10% 0 10% 0;
+    }  
+}
