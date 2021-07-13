@@ -71,11 +71,6 @@ img {
     max-width: 3739px;
 }
 
-.process_image {
-    max-width: 800px;
-    text-align: center;
-}
-
 .profile_image {
     width: 100%;
     max-width: 500px;
@@ -209,6 +204,8 @@ figure img:hover, figure div img:hover {
 
 
 
+
+
 footer {
     margin: 10% 0 10% 0;
     text-align: center;
@@ -282,17 +279,14 @@ footer {
         flex-direction: column;
     }
 
-    .process_article {
+    .process_steps {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
-
-    .process_article div {
-        width: 50%;
-    }
-
-    .process_image {
-        width: 50%;
-        padding-left: 5%;
+    
+    .process_steps article {
+        width: 30%;
     }
 
     /* Work Case images */
