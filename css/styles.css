@@ -106,9 +106,9 @@ button:hover{
 
 /*****************************************Work Case Image Styles Start*****************************************/
 
-figure img:hover, figure div img:hover {
+/* figure img:hover, figure div img:hover {
     transition: 1s ease;
-}
+} */
 
 figure img:hover, figure div img:hover {
     -webkit-transform: scale(0.9);
@@ -308,7 +308,7 @@ footer {
         width: 100%;
     }
 
-    figure div img {
+    figure div a {
         max-width: 48%;
     }
 
@@ -320,12 +320,13 @@ footer {
     }
 
     .profile_img {
-        width: 30%;
+        width: 40%;
+        padding-top: 0;
     }
 
     .about_articles {
-        width: 60%;
-        padding-left: 5%;
+        width: 55%;
+        padding: 5%;
     }
 
 
