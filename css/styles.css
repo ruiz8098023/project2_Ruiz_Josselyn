@@ -35,7 +35,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-p {
+p, .contact form {
     font-family: lato, sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -85,7 +85,7 @@ img {
 
 
 /*****************************************BUTTON STYLING*****************************************/
-button {
+button, .contact button {
     background-color: white;
     color: #231F20;
     border: 2px solid #231F20;
@@ -117,17 +117,6 @@ figure img:hover, figure div img:hover {
     transition: 1s ease;
 }
 
-/* .worktwo img:nth-child(1), .workthree img:nth-child(1){
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-.worktwo img:nth-child(2), .workthree img:nth-child(2) {
-    position: absolute;
-    z-index: 99;
-    left: 0;
-} */
 
 /*****************************************Work Case Image Styles End*****************************************/
 
@@ -227,6 +216,17 @@ footer {
 
 
 
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact form input {
+    padding: 1%;
+    margin: 1% 0;
+}
+
 
 
 
@@ -311,6 +311,41 @@ footer {
     figure div img {
         max-width: 48%;
     }
+
+
+    /* About Me Page stylings */
+    .about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile_img {
+        width: 30%;
+    }
+
+    .about_articles {
+        width: 60%;
+        padding-left: 5%;
+    }
+
+
+    /* Contact Page stylings */
+    .contact {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contact aside {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .contact article {
+        padding-right: 5%;
+        width: 50%;
+    }
+
 
 
     /* Footer styling */
